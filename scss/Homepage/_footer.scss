@@ -1,0 +1,35 @@
+.footer {
+  min-height: 5rem;
+}
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  min-height: 33vh;
+  div {
+    width: 27%;
+  }
+  div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    .imgContainer {
+      width: 50%;
+      display: flex;
+      justify-content: center !important;
+      margin-left: 8rem;
+    }
+
+    h1 {
+      font-weight: 700;
+    }
+    .iconLocation {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      h1 {
+        font-size: 16px;
+      }
+    }
+  }
+}
