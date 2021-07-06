@@ -556,6 +556,11 @@ section:nth-child(4) .content {
   margin-left: 8rem;
 }
 
+.footerContainer div:nth-child(1) .GYD {
+  letter-spacing: -0.04em;
+  font-weight: 900 !important;
+}
+
 .footerContainer div:nth-child(1) h1 {
   font-weight: 700;
 }
@@ -568,9 +573,15 @@ section:nth-child(4) .content {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-left: .7rem;
 }
 
 .footerContainer div:nth-child(1) .iconLocation h1 {
   font-size: 16px;
+  font-weight: 1000;
+}
+
+.footerContainer div:nth-child(1) .iconLocation .loc {
+  width: 4%;
 }
 /*# sourceMappingURL=style.css.map */
