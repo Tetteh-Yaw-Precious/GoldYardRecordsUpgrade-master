@@ -12,19 +12,25 @@ section:nth-child(3){
             display: flex;
             flex-direction: column;
             justify-content: center;
+            p{
+                text-align: justify;
+            }
         }
         .images{
-            width: 50%  ;
+            width: 50%;
             display: flex;
             img:nth-child(1){
                 width: 259px;
                 position: relative;
                 left: 60px;
                 z-index: 1;
+                border-radius: 50px;
             }
         }
         img:nth-child(2){
             width: 200px;
+            border-radius: 50px;
+            margin:6rem 0 6rem 0;
         }
     }
 }
