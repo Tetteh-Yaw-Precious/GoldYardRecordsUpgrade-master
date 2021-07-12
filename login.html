@@ -1,48 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GoldYardRecords|Login</title>
-    <link rel="stylesheet" href="./scss/style.css">
-</head>
+    <link rel="stylesheet" href="./scss/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- Navigation Bar -->
     <section class="navigationBar">
-        <div class="container">
-            <div class="logo"><a href="/index.html"><img src="./ASSETS/navigationBar/goldYardLogo.svg" alt=""></a></div>
-            <ul>
-                <li><a href="#">BEATS STORE</a></li>
-                <li><a href="#">ARTISTES</a></li>
-            </ul>
-            <div class="searchBox">
-                <input type="text" placeholder="search">
-                <div class="searchBtn">
-                    <a href="#"><img src="./ASSETS/navigationBar/searchIcon.svg" alt=""></a>
-                </div>
-            </div>
-            <ul>
-                <li><a href="./login.html" class="login
-                    ">LOGIN</a></li>
-                <li><a href="#" class="shoppingCart"><img src="./ASSETS/navigationBar/shoppingCart.svg" alt=""></a></li>
-            </ul>
+      <div class="container">
+        <div class="logo">
+          <a href="/index.html"
+            ><img src="./ASSETS/navigationBar/goldYardLogo.svg" alt=""
+          /></a>
         </div>
+        <ul>
+          <li><a href="#">BEATS STORE</a></li>
+          <li><a href="#">ARTISTES</a></li>
+        </ul>
+        <div class="searchBox">
+          <input type="text" placeholder="search" />
+          <div class="searchBtn">
+            <a href="#"
+              ><img src="./ASSETS/navigationBar/searchIcon.svg" alt=""
+            /></a>
+          </div>
+        </div>
+        <ul>
+          <li><a href="./login.html" class="login">LOGIN</a></li>
+          <li>
+            <a href="#" class="shoppingCart"
+              ><img src="./ASSETS/navigationBar/shoppingCart.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
     </section>
     <!-- Navigation Bar -->
     <div class="loginContainer">
-        <div class="loginLeft">
-
-        </div>
-        <div class="loginRight">
-            <div class="rLoginContainer">
-                
+      <div class="loginLeft"></div>
+      <div class="loginRight">
+        <div class="rLoginContainer">
+          <div class="login--heading">
+            <div class="head">
+              <h1>Sign In</h1>
+              <div class="hd--left">
+                <p>Don't have an account? <a href="#">Sign Up</a></p>
+              </div>
             </div>
+            <form>
+              <div class="log--username">
+                <label for="username">Username</label>
+                <div class="input--icon">
+                  <input type="text" placeholder="Enter username" />
+                  <i class="fa fa-trash"></i>
+                </div>
+              </div>
+              <div class="log--username">
+                <label for="password">Password</label>
+                <div class="input--icon">
+                  <input type="text" placeholder="Enter password" />
+                  <i class="fa fa-trash"></i>
+                </div>
+              </div>
+              <div class="login--btns">
+                <a href="#">Sign In</a>
+                <div class="or">
+                  <hr />
+                  <p>or</p>
+                  <hr />
+                </div>
+                <div class="log--google">
+                    <a href="#"><img src="./ASSETS/loginpage/google.svg" alt="">continue with google</a>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>
