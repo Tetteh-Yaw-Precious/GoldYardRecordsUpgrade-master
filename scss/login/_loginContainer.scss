@@ -44,14 +44,14 @@
         display: flex;
         flex-direction: column;
         width: 60%;
-        margin-bottom: .6rem;
+        margin-bottom: 0.6rem;
         label {
           margin-bottom: 0.4rem;
           padding: 0rem 1.5rem;
           font-weight: 600 !important;
           font-size: $labelFontSize;
         }
-        .input--icon{
+        .input--icon {
           width: 100%;
           display: flex;
           flex-direction: row !important;
@@ -72,7 +72,7 @@
           justify-content: center;
           height: $logInHeight;
           align-items: center;
-          margin-bottom: .4rem;
+          margin-bottom: 0.4rem;
           border-radius: $borderRadius;
           background-color: $primaryColor;
           color: rgb(0, 0, 0);
@@ -91,15 +91,28 @@
           }
         }
       }
-      .log--google{
+      .log--google {
         width: 100%;
-        a{
+        a {
           border: 1px solid $primaryColor;
           background: white;
+          font-family: 13px !important;
         }
-        a img{
+        a img {
           width: 1.2rem;
-          margin: 0rem .8rem;
+          margin: 0rem 0.8rem;
+        }
+      }
+      .log--facebook {
+        width: 100%;
+        a {
+          background: #3b5998;
+          color: white;
+          font-family: 13px;
+        }
+        a img {
+          width: .5rem;
+          margin: 0rem 0.8rem;
         }
       }
     }

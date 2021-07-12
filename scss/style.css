@@ -781,8 +781,21 @@ section:nth-child(1) .container ul:nth-child(4) .shoppingCart img {
 .loginRight .rLoginContainer .login--heading form .log--google a {
   border: 1px solid #FFD400;
   background: white;
+  font-family: 13px !important;
 }
 .loginRight .rLoginContainer .login--heading form .log--google a img {
   width: 1.2rem;
+  margin: 0rem 0.8rem;
+}
+.loginRight .rLoginContainer .login--heading form .log--facebook {
+  width: 100%;
+}
+.loginRight .rLoginContainer .login--heading form .log--facebook a {
+  background: #3b5998;
+  color: white;
+  font-family: 13px;
+}
+.loginRight .rLoginContainer .login--heading form .log--facebook a img {
+  width: 0.5rem;
   margin: 0rem 0.8rem;
 }/*# sourceMappingURL=style.css.map */
