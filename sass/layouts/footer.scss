@@ -1,0 +1,115 @@
+@use '../abstracts/variables.scss' as *;
+@use '../base/typography.scss' as *;
+
+.footer {
+  min-height: 5rem;
+}
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  min-height: 33vh;
+  div {
+    width: 27%;
+  }
+  div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    .imgContainer {
+      width: 50%;
+      display: flex;
+      justify-content: center !important;
+      margin-left: 8rem;
+    }
+    .GYD {
+      letter-spacing: -0.04em;
+      font-weight: 900 !important;
+    }
+    h1 {
+      font-weight: 700;
+    }
+    .iconLocation {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-left: 0.7rem;
+      h1 {
+        font-size: 16px;
+        font-weight: 1000;
+      }
+      .loc {
+        width: 4%;
+      }
+    }
+  }
+}
+.footer .footerContainer .contactUs {
+  display: flex;
+  flex-direction: column;
+  h1 {
+    border-bottom: 2px solid $primaryColor;
+    width: 40%;
+    padding-bottom: 0.2rem;
+    margin-bottom: 1rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    input {
+      outline: none;
+    }
+    input:nth-child(1) {
+      height: 47.1px;
+      margin-bottom: 1rem;
+    }
+    textarea {
+      height: 85.71px;
+      outline: none;
+    }
+    .socialsBtn {
+      width: 100%;
+      min-height: 4rem;
+      margin-top: 1.3rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .icons {
+        display: flex;
+        flex-direction: row;
+        min-height: 5vh;
+        svg {
+          padding-right: 0.4rem;
+          width: 40rem !important;
+        }
+        circle:hover {
+          fill: $primaryColor;
+          cursor: pointer;
+        }
+      }
+      a {
+        padding: 0.7rem 3rem;
+        background: black;
+        color: white;
+        border-radius: 50px;
+      }
+      a:hover {
+        background: $primaryColor;
+        color: black;
+        transition: all 1ms ease-in;
+      }
+    }
+  }
+}
+.copyright {
+  height: 5vh;
+  background-color: black;
+  border-radius: 30px 30px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: $primaryColor;
+    font-weight: 700;
+  }
+}

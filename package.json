@@ -1,0 +1,22 @@
+{
+  "name": "goldyardrecordsupgrade-master",
+  "version": "1.0.0",
+  "description": "Record label site",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "dart-sass sass/main.scss css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tetteh-Yaw-Precious/GoldYardRecordsUpgrade-master.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tetteh-Yaw-Precious/GoldYardRecordsUpgrade-master/issues"
+  },
+  "homepage": "https://github.com/Tetteh-Yaw-Precious/GoldYardRecordsUpgrade-master#readme",
+  "devDependencies": {
+    "dart-sass": "^1.25.0"
+  }
+}

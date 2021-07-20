@@ -1,0 +1,115 @@
+.footer {
+  min-height: 5rem;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  min-height: 33vh;
+}
+.footerContainer div {
+  width: 27%;
+}
+.footerContainer div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.footerContainer div:nth-child(1) .imgContainer {
+  width: 50%;
+  display: flex;
+  justify-content: center !important;
+  margin-left: 8rem;
+}
+.footerContainer div:nth-child(1) .GYD {
+  letter-spacing: -0.04em;
+  font-weight: 900 !important;
+}
+.footerContainer div:nth-child(1) h1 {
+  font-weight: 700;
+}
+.footerContainer div:nth-child(1) .iconLocation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-left: 0.7rem;
+}
+.footerContainer div:nth-child(1) .iconLocation h1 {
+  font-size: 16px;
+  font-weight: 1000;
+}
+.footerContainer div:nth-child(1) .iconLocation .loc {
+  width: 4%;
+}
+
+.footer .footerContainer .contactUs {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footerContainer .contactUs h1 {
+  border-bottom: 2px solid #FFD400;
+  width: 40%;
+  padding-bottom: 0.2rem;
+  margin-bottom: 1rem;
+}
+.footer .footerContainer .contactUs form {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footerContainer .contactUs form input {
+  outline: none;
+}
+.footer .footerContainer .contactUs form input:nth-child(1) {
+  height: 47.1px;
+  margin-bottom: 1rem;
+}
+.footer .footerContainer .contactUs form textarea {
+  height: 85.71px;
+  outline: none;
+}
+.footer .footerContainer .contactUs form .socialsBtn {
+  width: 100%;
+  min-height: 4rem;
+  margin-top: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .footerContainer .contactUs form .socialsBtn .icons {
+  display: flex;
+  flex-direction: row;
+  min-height: 5vh;
+}
+.footer .footerContainer .contactUs form .socialsBtn .icons svg {
+  padding-right: 0.4rem;
+  width: 40rem !important;
+}
+.footer .footerContainer .contactUs form .socialsBtn .icons circle:hover {
+  fill: #FFD400;
+  cursor: pointer;
+}
+.footer .footerContainer .contactUs form .socialsBtn a {
+  padding: 0.7rem 3rem;
+  background: black;
+  color: white;
+  border-radius: 50px;
+}
+.footer .footerContainer .contactUs form .socialsBtn a:hover {
+  background: #FFD400;
+  color: black;
+  transition: all 1ms ease-in;
+}
+
+.copyright {
+  height: 5vh;
+  background-color: black;
+  border-radius: 30px 30px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copyright p {
+  color: #FFD400;
+  font-weight: 700;
+}/*# sourceMappingURL=footer.css.map */
