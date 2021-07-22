@@ -1,9 +1,12 @@
+@use '../abstracts/mixins.scss' as *;
 .releaseSlider {
-  min-height: 40vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  margin-bottom: 10rem;
+  @include rspnsv(phone) {
+    display: block;
+  }
   .sliderContainer {
     min-height: 5vh;
     height: 285.79px;
@@ -33,4 +36,20 @@
     align-items: center;
     margin: 0 2rem;
   }
+}
+
+.arrows {
+  width: 89%;
+  margin-left: 11%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 10rem;
+}
+i {
+  font-size: 3rem !important;
+  cursor: pointer;
+}
+i:hover {
+  color: red;
 }
