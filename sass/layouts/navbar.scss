@@ -1,81 +1,89 @@
 @use '../abstracts/variables.scss' as *;
 
 section:nth-child(1) {
-    max-width: 100%;
+  max-width: 100%;
+  height: 129px;
+  box-shadow: (0px 4px 60px rgba(190, 190, 190, 0.15));
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: white;
+  .container {
+    width: 90%;
+    margin: 0 5%;
     height: 129px;
-    box-shadow: (0px 4px 60px rgba(190, 190, 190, 0.15));
-    position: sticky;
-    top: 0;
-    z-index: 5;
-    background: white;
-    .container {
-      width: 90%;
-      height: 129px;
-      margin: 0 5%;
+    display: flex;
+    flex-direction: row;
+    .logo {
+      width: 10%;
       display: flex;
-      flex-direction: row;
-      .logo {
-        width: 10%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      justify-content: center;
+      align-items: center;
+    }
+    ul:nth-child(2) {
+      width: 21%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      li a {
+        font-weight: 700;
+        transition: all 0.15s ease-in;
       }
-      ul:nth-child(2) {
-        width: 21%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        li a {
-          padding: 4px 15px 4px 0px;
-          margin-right: 2rem;
-          font-weight: 700;
-        }
-        li a:hover {
-          border-bottom: 0.2px solid $primaryColor;
-          animation-name: --anime-hover;
-        }
+      li a:hover {
+        padding-bottom: 0.25rem;
+        border-bottom: 2.5px solid $primaryColor;
+        // transition: all 0.2s ease-in;
+        animation-name: --anime-hover;
       }
-      .searchBox {
-        width: 50%;
+    }
+    .searchBox {
+      width: 70%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .--searchBoxBtn {
+        width: 85%;
         display: flex;
-        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: $inputColor;
+        border-radius: $borderRadius;
         input {
-          width: 90%;
           height: 43px;
+          width: 60%;
         }
         .searchBtn {
-          a {
-            width: 19%;
-            padding: 0.8rem 1.3rem 0.5rem 2rem;
-            background-color: $primaryColor;
-            border-radius: 0px 100px 100px 200px;
-            margin-left: -4.5rem;
-          }
-        }
-      }
-      ul:nth-child(4) {
-        width: 19%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        li .login {
-          font-weight: 700;
-          margin-top: 3rem;
-          padding: 8px 43px;
-          border-radius: 100px;
-          border: 3px solid $primaryColor;
-        }
-        .login:hover {
+          width: 12%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           background-color: $primaryColor;
-        }
-        .shoppingCart img {
-          border-radius: 200px;
-          align-self: center;
-          padding: 0.4rem;
-          margin-left: 13px;
-          background-color: $primaryColor;
+          border-radius: 0px 100px 100px 165px;
         }
       }
     }
+    ul:nth-child(4) {
+      width: 19%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      li .login {
+        font-weight: 700;
+        margin-top: 3rem;
+        padding: 10px 43px;
+        border-radius: 100px;
+        border: 2px solid $primaryColor;
+      }
+      .login:hover {
+        background-color: $primaryColor;
+      }
+      .shoppingCart img {
+        border-radius: 200px;
+        align-self: center;
+        padding: 0.4rem;
+        margin-left: 13px;
+        background-color: $primaryColor;
+      }
+    }
   }
-  
+}
