@@ -31,6 +31,7 @@ section:nth-child(2) {
       span {
         font-family: $alfaSlabOne;
         color: $primaryColor;
+        font-size: 52px;
       }
     }
 
@@ -47,8 +48,8 @@ section:nth-child(2) {
       margin-top: 10px;
       padding: 15px 43px;
       border-radius: 100px;
-      transition: 5ms ease;
-      font-weight: 600;
+      transition: all 100ms linear;
+      font-weight: 500;
     }
     a:hover {
       color: black;
