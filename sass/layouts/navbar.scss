@@ -23,7 +23,7 @@ section:nth-child(1) {
     ul:nth-child(2) {
       width: 16%;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       li a {
         transition: all 100ms linear;

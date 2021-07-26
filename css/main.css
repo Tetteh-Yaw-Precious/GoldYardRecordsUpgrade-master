@@ -1,10 +1,30 @@
+/*
+0 - 600px: Phone
+600 - 900px: Tablet portrait
+900 - 1200px: Tablet Landscape
+[1200 - 1800] is where our normal styles apply
+1800px + : Big desktop
+
+*/
+/*
+$breakpoint argument choices:
+--phone
+--tab-port
+--tab-land
+--big-desktop
+*/
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
   font-family: "Open Sans", sans-serif;
   color: #333;
-  font-size: 16px;
+}
+* html {
+  font-size: 62.5%;
+}
+* body {
+  box-sizing: border-box;
 }
 * h1 {
   font-size: 28px;
@@ -76,11 +96,6 @@ circle {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-}
-@media (max-width: 600px) {
-  .releaseSlider {
-    display: block;
-  }
 }
 .releaseSlider .sliderContainer {
   min-height: 5vh;
@@ -211,7 +226,7 @@ section:nth-child(1) .container .logo {
 section:nth-child(1) .container ul:nth-child(2) {
   width: 16%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 section:nth-child(1) .container ul:nth-child(2) li a {
