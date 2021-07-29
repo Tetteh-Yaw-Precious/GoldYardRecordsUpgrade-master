@@ -35,7 +35,7 @@
       justify-content: center;
       margin-left: 0.7rem;
       h1 {
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 1000;
       }
       .loc {
@@ -48,7 +48,7 @@
   display: flex;
   flex-direction: column;
   h1 {
-    border-bottom: 2px solid $primaryColor;
+    border-bottom: 0.12rem solid $primaryColor;
     width: 40%;
     padding-bottom: 0.2rem;
     margin-bottom: 1rem;
@@ -60,11 +60,11 @@
       outline: none;
     }
     input:nth-child(1) {
-      height: 47.1px;
+      height: 2.93rem;
       margin-bottom: 1rem;
     }
     textarea {
-      height: 85.71px;
+      height: 5.35rem;
       outline: none;
     }
     .socialsBtn {
@@ -91,7 +91,7 @@
         padding: 0.7rem 3rem;
         background: black;
         color: white;
-        border-radius: 50px;
+        border-radius: 3.12rem;
       }
       a:hover {
         background: $primaryColor;
@@ -104,7 +104,7 @@
 .copyright {
   height: 5vh;
   background-color: black;
-  border-radius: 30px 30px 0px 0px;
+  border-radius: 1.87rem 1.87rem 0rem 0rem;
   display: flex;
   justify-content: center;
   align-items: center;

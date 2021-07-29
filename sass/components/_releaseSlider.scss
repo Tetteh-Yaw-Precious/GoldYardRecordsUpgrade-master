@@ -7,16 +7,16 @@
   margin-bottom: 10rem;
   .sliderContainer {
     min-height: 5vh;
-    height: 285.79px;
+    height: 17.86rem;
     width: 90%;
-    border-radius: 142.893px 0px 0px 142.893px;
+    border-radius: 8.93rem 0 0 8.93rem;
     background: linear-gradient(
       83.93deg,
       rgba(255, 212, 0, 0.3) 1.75%,
       rgba(255, 212, 0, 0.0433364) 106.46%,
       rgba(255, 212, 0, 0) 106.47%
     );
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(6.25rem);
     display: flex;
     align-items: center;
   }
@@ -28,18 +28,17 @@
 }
 .sliderContainer .slider .--item {
   background: rgba(255, 255, 255, 0.65);
-  backdrop-filter: blur(110px);
+  backdrop-filter: blur(6.87rem);
 
   /* Note: backdrop-filter has minimal browser support */
-  border-radius: 100px;
-  border-radius: 100px;
-  min-width: 443px;
+  border-radius: 6.25rem;
+  min-width: 27.68rem;
   display: flex;
   margin: 0 2rem;
 }
 .sliderContainer .slider .--item .--item-container {
   width: 100%;
-  border-radius: 100px;
+  border-radius: 6.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,9 +75,9 @@
     .--musicPromolinks {
       width: 90%;
       min-height: 2.5rem;
-      border-radius: 100px;
+      border-radius: 6.25rem;
       background: rgba(255, 255, 255, 0.6);
-      backdrop-filter: blur(219px);
+      backdrop-filter: blur(13.68rem);
       display: flex;
       justify-content: space-evenly;
       align-items: center;
@@ -86,8 +85,7 @@
         transition: all 0.3s ease 0s;
       }
       a:hover {
-        //   box-shadow: 0px 10px 10px rgba(110, 127, 137, 0.918);
-        transform: translateY(-3px);
+        transform: translateY(-0.18rem);
         transition: all 0.3s ease 0s;
       }
     }

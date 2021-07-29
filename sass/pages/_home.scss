@@ -1,5 +1,6 @@
 //
 @use '../abstracts/variables.scss' as *;
+@use '../abstracts/functions.scss' as *;
 @use '../base/typography.scss' as *;
 .banner {
   width: 100%;
@@ -16,38 +17,37 @@
     align-items: center;
     justify-content: center;
     p:nth-child(1) {
-      font-size: 28px;
-      padding-bottom: 10px;
+      font-size: rem(28);
+      padding-bottom: rem(10);
       color: $pamperYourEars;
     }
-
     h2 {
       color: white;
-      font-size: 52px;
+      font-size: rem(52);
       font-family: $alfaSlabOne;
       letter-spacing: 3%;
-      padding-bottom: 5px;
+      padding-bottom: rem(5);
 
       span {
         font-family: $alfaSlabOne;
         color: $primaryColor;
-        font-size: 52px;
+        font-size: rem(52);
       }
     }
 
     p:nth-child(3) {
       color: white;
       text-align: center;
-      padding: 0 0 10px 0;
+      padding: 0 0 rem(10) 0;
     }
 
     a {
       color: white;
       text-align: center;
-      border: 3px solid $primaryColor;
-      margin-top: 10px;
-      padding: 15px 43px;
-      border-radius: 100px;
+      border: rem(2) solid $primaryColor;
+      margin-top: rem(10);
+      padding: rem(15) rem(43);
+      border-radius: rem(100);
       transition: all 100ms linear;
       font-weight: 500;
     }
@@ -60,12 +60,12 @@
 }
 .aboutUs {
   width: 100%;
-  height: 500px;
-  margin-top: 100px;
+  height: rem(500);
+  margin-top: rem(100);
   .container {
     width: 80%;
     margin: 0 10%;
-    height: 500px;
+    height: rem(500);
     display: flex;
     .content {
       width: 80%;
@@ -83,28 +83,28 @@
       width: 40%;
       display: flex;
       img:nth-child(1) {
-        width: 259px;
+        width: rem(259);
         position: relative;
-        left: 60px;
+        left: rem(60);
         z-index: 1;
-        border-radius: 50px;
+        border-radius: rem(50);
       }
     }
     img:nth-child(2) {
-      width: 200px;
-      border-radius: 50px;
+      width: rem(200);
+      border-radius: rem(50);
       margin: 6rem 0 6rem 0;
     }
   }
 }
 .ourServices {
   width: 100%;
-  height: 500px;
-  margin-top: 100px;
+  height: rem(500);
+  margin-top: rem(100);
   .container {
     width: 80%;
     margin: 0 10%;
-    height: 500px;
+    height: rem(500);
     display: flex;
     .content {
       width: 80%;
@@ -119,24 +119,24 @@
       width: 50%;
       display: flex;
       img:nth-child(1) {
-        width: 259px;
+        width: rem(259);
         position: relative;
-        left: 60px;
+        left: rem(60);
         z-index: 1;
-        border-radius: 50px;
+        border-radius: rem(50);
       }
     }
     img:nth-child(2) {
-      width: 200px;
-      border-radius: 50px;
+      width: rem(200);
+      border-radius: rem(50);
       margin: 6rem 0 6rem 0;
     }
   }
 }
 section:nth-child(4) {
   width: 100%;
-  height: 700px;
-  margin-top: 120px;
+  height: rem(700);
+  margin-top: rem(120);
   display: grid;
   place-content: center;
   .content {
@@ -145,7 +145,7 @@ section:nth-child(4) {
     margin-left: 2%;
   }
 }
-y .-services-grid {
+.-services-grid {
   width: 55.1875rem;
   height: 28.125rem;
   display: grid;
@@ -209,7 +209,7 @@ y .-services-grid {
         width: 0.1rem;
         height: 40%;
         color: #c4c4c4;
-        border: 1px solid rgb(211, 211, 211);
+        border: rem(1) solid rgb(211, 211, 211);
       }
     }
   }
@@ -217,7 +217,7 @@ y .-services-grid {
 
 .--item-content:hover {
   cursor: pointer;
-  transform: translateY(-15px);
+  transform: translateY(rem(-15));
   transition: all 0.1s ease 0s;
 }
 
@@ -235,7 +235,7 @@ y .-services-grid {
     .one {
       width: 25%;
       height: 35rem;
-      border-radius: 50px;
+      border-radius: rem(50);
       margin-right: 2rem;
       background-image: url("/ASSETS/ourProducers/producerone.jpg");
       background-size: cover;
@@ -246,14 +246,14 @@ y .-services-grid {
         height: 10vh;
         width: 100%;
         background: rgba(255, 255, 255, 0.6);
-        backdrop-filter: blur(100px);
-        border-radius: 0px 100px 50px 50px;
+        backdrop-filter: blur(rem(100));
+        border-radius: 0 rem(100) rem(50) rem(50);
       }
     }
     .two {
       width: 25%;
       height: 35rem;
-      border-radius: 50px;
+      border-radius: rem(50);
       background-image: url("/ASSETS/ourProducers/producertwo.jpg");
       background-size: cover;
       background-position: center;
@@ -263,8 +263,8 @@ y .-services-grid {
         height: 10vh;
         width: 100%;
         background: rgba(255, 255, 255, 0.6);
-        backdrop-filter: blur(100px);
-        border-radius: 0px 100px 50px 50px;
+        backdrop-filter: blur(rem(100));
+        border-radius: 0rem rem(100) rem(50) rem(50);
       }
     }
   }
