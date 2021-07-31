@@ -1,0 +1,40 @@
+@use '../abstracts/variables.scss' as *;
+@use '../abstracts/functions.scss' as *;
+.--navigationbar-two {
+  width: 100%;
+  padding: 0 20%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  box-shadow: (0rem 0.25rem 3.75rem rgba(190, 190, 190, 0.15));
+  z-index: 3;
+  border-bottom: rem(4) solid $primaryColor;
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 80%;
+    }
+  }
+  .navlink__container {
+    display: flex;
+    width: 40%;
+    height: 4rem;
+    justify-content: space-around;
+    align-items: center;
+    .nav_link {
+      transition: all 100ms linear;
+      font-weight: 700;
+    }
+    a:hover {
+      padding-bottom: 0.25rem;
+      border-bottom: 0.11rem solid black;
+      font-weight: 600;
+    }
+  }
+}
