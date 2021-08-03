@@ -23,6 +23,7 @@
     row-gap: 2rem;
     column-gap: 2rem;
     .item {
+      cursor: pointer;
       border-radius: rem(40);
       object-fit: cover;
       background-image: url(/ASSETS/artistes/dummypic.jpg);

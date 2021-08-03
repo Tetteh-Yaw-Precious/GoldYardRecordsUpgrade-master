@@ -201,7 +201,7 @@ i:hover {
 
 .--navigationbar-two {
   width: 100%;
-  padding: 0 20%;
+  padding: 0 10%;
   height: 5rem;
   display: flex;
   align-items: center;
@@ -811,6 +811,7 @@ section:nth-child(4) .content {
   column-gap: 2rem;
 }
 .--artiste-grid-container .--artistes-grid .item {
+  cursor: pointer;
   border-radius: 2.5rem;
   object-fit: cover;
   background-image: url(/ASSETS/artistes/dummypic.jpg);
