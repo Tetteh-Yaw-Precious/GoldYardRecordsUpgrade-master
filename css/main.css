@@ -211,7 +211,7 @@ i:hover {
   background-color: white;
   box-shadow: 0rem 0.25rem 3.75rem rgba(190, 190, 190, 0.15);
   z-index: 3;
-  border-bottom: 0.25rem solid #ffd400;
+  border-bottom: 0.125rem solid #ffd400;
 }
 .--navigationbar-two .logo {
   display: flex;
@@ -230,112 +230,158 @@ i:hover {
 }
 .--navigationbar-two .navlink__container .nav_link {
   transition: all 100ms linear;
-  font-weight: 700;
+  font-weight: 500;
 }
 .--navigationbar-two .navlink__container a:hover {
   padding-bottom: 0.25rem;
   border-bottom: 0.11rem solid black;
-  font-weight: 600;
 }
 
-.footer {
+.footer-two {
+  width: 100%;
+  min-height: 20rem;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.footer-two .container {
+  width: 55%;
   min-height: 5rem;
+  display: flex;
 }
-
-.footerContainer {
+.footer-two .container .image-location {
+  width: 50%;
+}
+.footer-two .container .image-location .il-container {
+  height: 75%;
   display: flex;
   justify-content: center;
-  min-height: 33vh;
+  align-items: center;
 }
-.footerContainer div {
-  width: 27%;
+.footer-two .container .image-location .il-container img {
+  width: 65%;
 }
-.footerContainer div:nth-child(1) {
+.footer-two .container .image-location .il-companyName {
+  height: 10%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
+}
+.footer-two .container .image-location .il-companyName h1 {
+  color: black;
+  font-weight: 1000;
   text-align: center;
 }
-.footerContainer div:nth-child(1) .imgContainer {
-  width: 50%;
+.footer-two .container .image-location .company-loc {
+  height: 10%;
   display: flex;
-  justify-content: center !important;
-  margin-left: 8rem;
-}
-.footerContainer div:nth-child(1) .GYD {
-  letter-spacing: -0.04em;
-  font-weight: 900 !important;
-}
-.footerContainer div:nth-child(1) h1 {
-  font-weight: 700;
-}
-.footerContainer div:nth-child(1) .iconLocation {
-  width: 100%;
-  display: flex;
+  flex-direction: row;
   justify-content: center;
-  margin-left: 0.7rem;
+  align-items: center;
 }
-.footerContainer div:nth-child(1) .iconLocation h1 {
-  font-size: 1rem;
-  font-weight: 1000;
+.footer-two .container .image-location .company-loc img {
+  width: 85%;
 }
-.footerContainer div:nth-child(1) .iconLocation .loc {
-  width: 4%;
-}
-
-.footer .footerContainer .contactUs {
+.footer-two .container .image-location .company-loc .loc-text {
+  width: 81%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.footer .footerContainer .contactUs h1 {
-  border-bottom: 0.12rem solid #ffd400;
-  width: 40%;
-  padding-bottom: 0.2rem;
-  margin-bottom: 1rem;
-}
-.footer .footerContainer .contactUs form {
-  display: flex;
-  flex-direction: column;
-}
-.footer .footerContainer .contactUs form input {
-  outline: none;
-}
-.footer .footerContainer .contactUs form input:nth-child(1) {
-  height: 2.93rem;
-  margin-bottom: 1rem;
-}
-.footer .footerContainer .contactUs form textarea {
-  height: 5.35rem;
-  outline: none;
-}
-.footer .footerContainer .contactUs form .socialsBtn {
+.footer-two .container .image-location .company-loc .loc-text h3 {
   width: 100%;
-  min-height: 4rem;
-  margin-top: 1.3rem;
+  font-weight: 900;
+  margin: 0;
+  color: black;
+}
+.footer-two .container .contact--us {
+  width: 50%;
+}
+.footer-two .container .contact--us .contact-us-heading {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+}
+.footer-two .container .contact--us .contact-us-heading h1 {
+  width: 40%;
+  border-bottom: 0.125rem solid #ffd400;
+}
+.footer-two .container .contact--us form {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-two .container .contact--us form input {
+  width: 100%;
+  border-radius: 6.25rem;
+  background-color: #f5f4f4;
+  border: none;
+  padding: 0 0 0 1.875rem;
+  outline: none;
+  height: 2.93rem;
+  font-size: 1rem;
+}
+.footer-two .container .contact--us form textarea {
+  resize: none;
+  border-radius: 3.125rem;
+  padding-left: 1.6rem;
+  padding-top: 1rem;
+  border: none;
+  background-color: #f5f4f4;
+  width: 100%;
+  height: 65%;
+  outline: none;
+  font-size: 1rem;
+}
+.footer-two .container .contact--us .icons--buttons {
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+.footer-two .container .contact--us .icons--buttons .icons {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 50%;
 }
-.footer .footerContainer .contactUs form .socialsBtn .icons {
+.footer-two .container .contact--us .icons--buttons .icons a {
   display: flex;
-  flex-direction: row;
-  min-height: 5vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem !important;
 }
-.footer .footerContainer .contactUs form .socialsBtn .icons svg {
-  padding-right: 0.4rem;
-  width: 40rem !important;
-}
-.footer .footerContainer .contactUs form .socialsBtn .icons circle:hover {
-  fill: #ffd400;
-  cursor: pointer;
-}
-.footer .footerContainer .contactUs form .socialsBtn a {
-  padding: 0.7rem 3rem;
+.footer-two .container .contact--us .icons--buttons .icons a .lab {
+  font-size: 20px !important;
+  padding: 0.4rem;
+  color: white;
+  border-radius: 100px;
   background: black;
+  transition: all 1ms ease-in;
+}
+.footer-two .container .contact--us .icons--buttons .icons a .lab:hover {
+  background-color: #ffd400;
+  color: black;
+  background: #ffd400;
+  transition: all 1ms ease-in;
+}
+.footer-two .container .contact--us .icons--buttons .button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.footer-two .container .contact--us .icons--buttons .button a {
+  background: black;
+  text-align: center;
+  padding: 0.8rem 4rem;
   color: white;
   border-radius: 3.12rem;
 }
-.footer .footerContainer .contactUs form .socialsBtn a:hover {
+.footer-two .container .contact--us .icons--buttons .button a:hover {
   background: #ffd400;
   color: black;
   transition: all 1ms ease-in;
@@ -745,28 +791,101 @@ section:nth-child(4) .content {
   width: 100%;
   display: flex;
   align-items: center;
-  padding-left: 0.75rem;
+  padding-left: 5%;
 }
 .Artistes--heading h1 {
   color: black !important;
 }
 
-.container {
-  border: 1px solid red;
-  min-height: 80vh;
+.--artiste-grid-container {
+  width: 90%;
+  min-height: 50rem;
+  margin: 0 5%;
+}
+.--artiste-grid-container .--artistes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 15.625rem 28.125rem 15.625rem;
+  justify-content: center;
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+.--artiste-grid-container .--artistes-grid .item {
+  border-radius: 2.5rem;
+  object-fit: cover;
+  background-image: url(/ASSETS/artistes/dummypic.jpg);
+  background-size: 100%;
+  background-position: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  transition: height 500ms;
+}
+.--artiste-grid-container .--artistes-grid .item .--artistes-info {
+  width: 100%;
+  height: 30%;
+  border-radius: 2.5rem;
+  background: rgba(255, 212, 0, 0.58);
+  backdrop-filter: blur(0.4375rem);
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-
-.--artistes-grid {
-  border: 1px solid teal;
-  width: 80%;
-  display: grid;
-  grid-template-columns: 20rem 20rem 20rem 20rem;
-  grid-template-rows: 1fr 1fr 1fr;
+.--artiste-grid-container .--artistes-grid .item .--artistes-info h2 {
+  color: white;
 }
-.--artistes-grid .item {
-  border: 1px solid red;
+.--artiste-grid-container .--artistes-grid .item--img-2 {
+  background-image: url(/ASSETS/artistes/chikichita.jpg);
+}
+.--artiste-grid-container .--artistes-grid .item--img-3 {
+  background-image: url(/ASSETS/artistes/kstrings.jpg);
+}
+.--artiste-grid-container .--artistes-grid .item--img-4 {
+  background: url("/ASSETS/artistes/Beauty.jpg");
+}
+.--artiste-grid-container .--artistes-grid .item--img-5 {
+  background: url("/ASSETS/artistes/Magica.jpg");
+}
+.--artiste-grid-container .--artistes-grid .item--img-6 {
+  background: url("/ASSETS/artistes/sarba.jpg");
+}
+.--artiste-grid-container .--artistes-grid .item--img-7 {
+  background: url("/ASSETS/artistes/Soniah.jpg");
+}
+.--artiste-grid-container .--artistes-grid .item--img-8 {
+  background: url("/ASSETS/artistes/Stephan.jpg");
+}
+.--artiste-grid-container .--artistes-grid .--advert {
+  grid-column: 1/span 4;
+  background-image: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.--artiste-grid-container .--artistes-grid .--advert .--advert-content {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 1000;
+  font-size: 32px;
+}
+.--artiste-grid-container .--artistes-grid .--advert .--advert-content h3 {
+  width: 100%;
+  border-bottom: none;
+  margin: 0;
+  text-align: center;
+  padding: 0;
+}
+.--artiste-grid-container .--artistes-grid .--advert .--advert-content span {
+  color: #ffd400;
+}
+.--artiste-grid-container .--artistes-grid .--advert .--advert-content a {
+  border: 2px solid #ffd400;
+  padding: 0.62rem 2.68rem;
+  border-radius: 6.25rem;
+  margin-top: 0.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */

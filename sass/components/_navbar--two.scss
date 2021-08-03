@@ -12,7 +12,7 @@
   background-color: white;
   box-shadow: (0rem 0.25rem 3.75rem rgba(190, 190, 190, 0.15));
   z-index: 3;
-  border-bottom: rem(4) solid $primaryColor;
+  border-bottom: rem(2) solid $primaryColor;
   .logo {
     display: flex;
     align-items: center;
@@ -29,12 +29,11 @@
     align-items: center;
     .nav_link {
       transition: all 100ms linear;
-      font-weight: 700;
+      font-weight: 500;
     }
     a:hover {
       padding-bottom: 0.25rem;
       border-bottom: 0.11rem solid black;
-      font-weight: 600;
     }
   }
 }
