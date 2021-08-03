@@ -152,6 +152,7 @@ section:nth-child(4) {
   grid-template-columns: 17rem 17rem 17rem;
   grid-template-rows: 10rem 10rem;
   grid-gap: 2rem;
+  backface-visibility: hidden;
   .grid-item {
     display: flex;
     .--item-content {
@@ -160,12 +161,17 @@ section:nth-child(4) {
       grid-template-columns: 30% 70%;
       grid-template-rows: 40% 60%;
       transition: all 0.3s ease 0s;
+      backface-visibility: hidden;
+
       .--content-image {
         display: flex;
         justify-content: center;
         align-items: center;
+        backface-visibility: hidden;
+
         img {
           width: 4.5rem;
+          backface-visibility: hidden;
         }
         .ci-img-1 {
           width: 3.5rem;
@@ -192,12 +198,16 @@ section:nth-child(4) {
           border-bottom: none;
           padding: 0;
           margin: 0.4rem 0 0 0;
+          backface-visibility: hidden;
         }
       }
       .--content-text {
         grid-column: 1 / span 3;
         min-height: 1rem;
         padding: 0 0 0 1.6rem;
+        p {
+          backface-visibility: hidden;
+        }
       }
     }
     .--item-hr {
@@ -219,6 +229,18 @@ section:nth-child(4) {
   cursor: pointer;
   transform: translateY(rem(-15));
   transition: all 0.1s ease 0s;
+  .--content-heading {
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+    h3 {
+      width: 80%;
+      border-bottom: none;
+      padding: 0;
+      margin: 0.4rem 0 0 0;
+      backface-visibility: hidden;
+    }
+  }
 }
 
 .ourProducers {

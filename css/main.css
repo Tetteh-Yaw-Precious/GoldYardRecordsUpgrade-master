@@ -551,6 +551,7 @@ section:nth-child(4) .content {
   grid-template-columns: 17rem 17rem 17rem;
   grid-template-rows: 10rem 10rem;
   grid-gap: 2rem;
+  backface-visibility: hidden;
 }
 .-services-grid .grid-item {
   display: flex;
@@ -561,14 +562,17 @@ section:nth-child(4) .content {
   grid-template-columns: 30% 70%;
   grid-template-rows: 40% 60%;
   transition: all 0.3s ease 0s;
+  backface-visibility: hidden;
 }
 .-services-grid .grid-item .--item-content .--content-image {
   display: flex;
   justify-content: center;
   align-items: center;
+  backface-visibility: hidden;
 }
 .-services-grid .grid-item .--item-content .--content-image img {
   width: 4.5rem;
+  backface-visibility: hidden;
 }
 .-services-grid .grid-item .--item-content .--content-image .ci-img-1 {
   width: 3.5rem;
@@ -595,11 +599,15 @@ section:nth-child(4) .content {
   border-bottom: none;
   padding: 0;
   margin: 0.4rem 0 0 0;
+  backface-visibility: hidden;
 }
 .-services-grid .grid-item .--item-content .--content-text {
   grid-column: 1/span 3;
   min-height: 1rem;
   padding: 0 0 0 1.6rem;
+}
+.-services-grid .grid-item .--item-content .--content-text p {
+  backface-visibility: hidden;
 }
 .-services-grid .grid-item .--item-hr {
   width: 10%;
@@ -618,6 +626,18 @@ section:nth-child(4) .content {
   cursor: pointer;
   transform: translateY(-0.9375rem);
   transition: all 0.1s ease 0s;
+}
+.--item-content:hover .--content-heading {
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+.--item-content:hover .--content-heading h3 {
+  width: 80%;
+  border-bottom: none;
+  padding: 0;
+  margin: 0.4rem 0 0 0;
+  backface-visibility: hidden;
 }
 
 .ourProducers {
