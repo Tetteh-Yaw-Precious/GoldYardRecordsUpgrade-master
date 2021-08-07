@@ -15,7 +15,6 @@
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
     />
   </head>
-
   <body>
     <!-- Navigation Bar -->
     <!-- <section class="navigationBar">
@@ -44,10 +43,12 @@
         <img src="./ASSETS/navigationBar/goldYardLogo.svg" alt="" />
       </div>
       <div class="navlink__container">
-        <a href="#" class="nav_link">Home</a>
-        <a href="#" class="nav_link">About-Us</a>
-        <a href="#" class="nav_link">Our Services</a>
-        <a href="./Artistes.html" class="nav_link">Artistes</a>
+        <a class="nav_link nav_link--active home-js">Home</a>
+        <a class="nav_link aboutUs-js">About-Us</a>
+        <a class="nav_link ourServices-js">Services</a>
+        <a class="nav_link producers-js">Producers</a>
+        <a class="nav_link contactUs-js">Contact Us</a>
+        <a href="./Artistes.html" class="nav_link artiste-btn">Artistes</a>
       </div>
     </div>
     <!--navigation Bar 2-->
@@ -67,7 +68,7 @@
     </section>
     <!-- Banner -->
     <!-- aboutUs -->
-    <section class="aboutUs">
+    <section class="aboutUs" id="aboutUs">
       <div class="container">
         <div class="content">
           <h3>About us</h3>
@@ -91,7 +92,7 @@
     </section>
     <!-- aboutUs -->
     <!-- ourServices -->
-    <section class="ourServices">
+    <section class="ourServices" id="ourServices">
       <div class="content">
         <h3>Our services</h3>
         <h1>wondering what we do?</h1>
@@ -506,7 +507,7 @@
                 <a href="#"><i class="lab la-whatsapp"></i></a>
                 <a href="#"><i class="lab la-instagram"></i></a>
                 <a href="#"><i class="lab la-twitter"></i></a>
-                <a href=""><i class="lab la-telegram"></i></a>
+                <a href="#"><i class="lab la-telegram"></i></a>
               </div>
               <div class="button">
                 <a href="#">Send</a>
@@ -519,7 +520,7 @@
         <p>Code Tavern</p>
       </div>
     </div>
-
-    <script src="./js/home.js"></script>
+    <script src="/js/navigation.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>

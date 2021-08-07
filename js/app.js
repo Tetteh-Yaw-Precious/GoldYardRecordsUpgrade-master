@@ -13,5 +13,4 @@ leftBtn.addEventListener("click", () => {
 rightBtn.addEventListener("click", () => {
   slider.scrollLeft += 420;
   console.log("fd");
-  
 });

@@ -23,17 +23,21 @@
   }
   .navlink__container {
     display: flex;
-    width: 40%;
-    height: 4rem;
+    width: 50%;
+    height: 100%;
     justify-content: space-around;
     align-items: center;
     .nav_link {
-      transition: all 100ms linear;
-      font-weight: 500;
+      transition: border 0.1ms ease-out;
+      font-weight: 700;
+      padding-bottom: 0.5rem;
+      cursor: pointer;
+    }
+    .nav_link--active {
+      border-bottom: rem(4) solid $primaryColor;
     }
     a:hover {
-      padding-bottom: 0.25rem;
-      border-bottom: 0.11rem solid black;
+      border-bottom: rem(4) solid $primaryColor;
     }
   }
 }

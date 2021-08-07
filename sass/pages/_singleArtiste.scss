@@ -1,0 +1,83 @@
+@use '../abstracts/variables.scss' as *;
+@use '../abstracts/functions.scss' as *;
+@use '../base/typography.scss' as *;
+.artisteContainer {
+  width: 100%;
+  height: rem(1549);
+  background-image: url("/ASSETS/singleArtistes/backgroundflare.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.singleArtiste-navigation {
+  height: rem(109);
+  display: flex;
+  align-items: flex-end;
+  padding: 0rem 10%;
+  padding-bottom: rem(10);
+  .navlink-container {
+    width: 10%;
+    height: rem(43);
+    border-radius: rem(100);
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .arts-link {
+      font-weight: 700;
+    }
+    span {
+      font-weight: 700;
+      font-size: rem(30);
+      color: $primaryColor;
+      padding: 0 rem(3);
+    }
+  }
+}
+.singleArtiste--banner {
+  width: 100%;
+  display: flex;
+  padding: 0 10%;
+  margin-bottom: rem(120);
+  .single-banner {
+    width: 100%;
+    min-height: rem(705);
+    border-radius: rem(25);
+    background-image: url("/ASSETS/singleArtistes/dumbannerpic--1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    .artiste-music-details {
+      width: 100%;
+      min-height: rem(185);
+      border-radius: rem(25);
+      background: rgba(255, 212, 0, 0.58);
+      backdrop-filter: blur(rem(7));
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .music-links {
+        min-height: rem(58);
+        width: rem(440);
+        background: rgba(255, 255, 255, 0.82);
+        backdrop-filter: blur(rem(205));
+        border-radius: rem(100);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 6rem;
+        a {
+          transition: all 0.3s ease 0s;
+        }
+        a:hover {
+          transform: translateY(-0.18rem);
+          transition: all 0.3s ease 0s;
+        }
+      }
+    }
+  }
+}
+
+.musicalSlider {
+  border: 2px solid red;
+}

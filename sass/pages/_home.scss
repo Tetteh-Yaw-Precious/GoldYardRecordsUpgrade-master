@@ -60,12 +60,15 @@
 }
 .aboutUs {
   width: 100%;
-  height: rem(500);
+  min-height: rem(500);
   margin-top: rem(100);
+  padding: 7rem 0rem;
+  behavior: smooth;
   .container {
     width: 80%;
     margin: 0 10%;
     height: rem(500);
+
     display: flex;
     .content {
       width: 80%;
@@ -253,6 +256,7 @@ section:nth-child(4) {
     min-height: 36rem;
     display: flex;
     justify-content: center;
+
     align-items: center;
     .one {
       width: 25%;
