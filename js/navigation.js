@@ -13,7 +13,7 @@ const navlink__switcher = function (e, navlink) {
   ) {
     scrollTo({
       top: 600,
-      left: 100,
+      left: 0,
       behavior: "smooth",
     });
   } else if (
@@ -22,7 +22,7 @@ const navlink__switcher = function (e, navlink) {
   ) {
     scrollTo({
       top: 0,
-      left: 100,
+      left: 0,
       behavior: "smooth",
     });
   } else if (
@@ -31,7 +31,7 @@ const navlink__switcher = function (e, navlink) {
   ) {
     scrollTo({
       top: 1360,
-      left: 100,
+      left: 0,
       behavior: "smooth",
     });
   } else if (
@@ -40,7 +40,7 @@ const navlink__switcher = function (e, navlink) {
   ) {
     scrollTo({
       top: 2400,
-      left: 100,
+      left: 0,
       behavior: "smooth",
     });
   } else if (
@@ -49,7 +49,7 @@ const navlink__switcher = function (e, navlink) {
   ) {
     scrollTo({
       top: 2900,
-      left: 100,
+      left: 0,
       behavior: "smooth",
     });
   }
@@ -59,4 +59,40 @@ navlinks.forEach((navlink) => {
   navlink_container.addEventListener("click", (e) => {
     navlink__switcher(e, navlink);
   });
+});
+
+//checking for scrollbar location
+window.addEventListener("scroll", (e) => {
+  let scroll = this.scrollY;
+  if (scroll >= 2800) {
+    navlinks.forEach((navlink) => {
+      navlink.classList.remove("nav_link--active");
+    });
+    const contactJs = document.querySelector(".contactUs-js");
+    contactJs.classList.add("nav_link--active");
+  } else if (scroll >= 2400) {
+    navlinks.forEach((navlink) => {
+      navlink.classList.remove("nav_link--active");
+    });
+    const producersJs = document.querySelector(".producers-js");
+    producersJs.classList.add("nav_link--active");
+  } else if (scroll >= 1360) {
+    navlinks.forEach((navlink) => {
+      navlink.classList.remove("nav_link--active");
+    });
+    const ourServicesJs = document.querySelector(".ourServices-js");
+    ourServicesJs.classList.add("nav_link--active");
+  } else if (scroll >= 600) {
+    navlinks.forEach((navlink) => {
+      navlink.classList.remove("nav_link--active");
+    });
+    const aboutUsJs = document.querySelector(".aboutUs-js");
+    aboutUsJs.classList.add("nav_link--active");
+  } else {
+    navlinks.forEach((navlink) => {
+      navlink.classList.remove("nav_link--active");
+    });
+    const homeJs = document.querySelector(".home-js");
+    homeJs.classList.add("nav_link--active");
+  }
 });
