@@ -229,16 +229,16 @@ i:hover {
   align-items: center;
 }
 .--navigationbar-two .navlink__container .nav_link {
-  transition: border 0.1ms ease-out;
+  transition: border 0.01ms ease-out;
   font-weight: 700;
   padding-bottom: 0.5rem;
   cursor: pointer;
 }
 .--navigationbar-two .navlink__container .nav_link--active {
-  border-bottom: 0.25rem solid #ffd400;
+  border-bottom: 0.1875rem solid #ffd400;
 }
 .--navigationbar-two .navlink__container a:hover {
-  border-bottom: 0.25rem solid #ffd400;
+  border-bottom: 0.1875rem solid #ffd400;
 }
 
 .footer-two {

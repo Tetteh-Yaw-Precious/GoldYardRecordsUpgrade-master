@@ -1,6 +1,7 @@
 //switching active class on navigation bar
 const navlink_container = document.querySelector(".navlink__container");
 const navlinks = Array.from(navlink_container.children);
+scroll;
 
 //navigation navigationbar links on click
 const navlink__switcher = function (e, navlink) {

@@ -28,16 +28,16 @@
     justify-content: space-around;
     align-items: center;
     .nav_link {
-      transition: border 0.1ms ease-out;
+      transition: border 0.01ms ease-out;
       font-weight: 700;
       padding-bottom: 0.5rem;
       cursor: pointer;
     }
     .nav_link--active {
-      border-bottom: rem(4) solid $primaryColor;
+      border-bottom: rem(3) solid $primaryColor;
     }
     a:hover {
-      border-bottom: rem(4) solid $primaryColor;
+      border-bottom: rem(3) solid $primaryColor;
     }
   }
 }
