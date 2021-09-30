@@ -1,6 +1,6 @@
-@use '../abstracts/variables.scss' as *;
-@use '../abstracts/functions.scss' as *;
-@use '../base/typography.scss' as *;
+@use "../abstracts/variables.scss" as *;
+@use "../abstracts/functions.scss" as *;
+@use "../base/typography.scss" as *;
 .artisteContainer {
   width: 100%;
   height: rem(1549);
@@ -78,6 +78,5 @@
   }
 }
 
-.musicalSlider {
-  border: 2px solid red;
-}
+// .musicalSlider {
+// }

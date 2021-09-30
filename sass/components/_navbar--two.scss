@@ -1,5 +1,5 @@
-@use '../abstracts/variables.scss' as *;
-@use '../abstracts/functions.scss' as *;
+@use "../abstracts/variables.scss" as *;
+@use "../abstracts/functions.scss" as *;
 .--navigationbar-two {
   width: 100%;
   padding: 0 10%;
@@ -9,10 +9,9 @@
   justify-content: space-between;
   position: sticky;
   top: 0;
-  background-color: white;
-  box-shadow: (0rem 0.25rem 3.75rem rgba(190, 190, 190, 0.15));
+  box-shadow: (0rem 0.25rem 3.75rem rgba(70, 70, 70, 0.15));
   z-index: 3;
-  border-bottom: rem(2) solid $primaryColor;
+  background: #010101;
   .logo {
     display: flex;
     align-items: center;
@@ -29,15 +28,24 @@
     align-items: center;
     .nav_link {
       transition: border 0.01ms ease-out;
-      font-weight: 700;
-      padding-bottom: 0.5rem;
+      font-weight: 400;
+      padding: 0.5rem;
       cursor: pointer;
+      color: white;
     }
     .nav_link--active {
-      border-bottom: rem(3) solid $primaryColor;
+      padding: 0.5rem;
+      border-bottom: rem(2) solid $primaryColor;
     }
     a:hover {
-      border-bottom: rem(3) solid $primaryColor;
+      border-bottom: rem(2) solid $primaryColor;
     }
   }
+}
+
+.blackbackground {
+  background: #010101;
+}
+.whitebackground {
+  background: white !important;
 }

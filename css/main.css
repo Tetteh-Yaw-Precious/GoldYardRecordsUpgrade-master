@@ -23,6 +23,7 @@ $breakpoint argument choices:
 }
 * body {
   box-sizing: border-box;
+  background: white;
 }
 * h1 {
   font-size: 1.75rem;
@@ -63,6 +64,7 @@ $breakpoint argument choices:
   font-size: 1rem;
   text-decoration: none;
   color: #020201;
+  transition: all 0.5s ease-in;
 }
 * input {
   border-radius: 6.25rem;
@@ -208,10 +210,9 @@ i:hover {
   justify-content: space-between;
   position: sticky;
   top: 0;
-  background-color: white;
   box-shadow: 0rem 0.25rem 3.75rem rgba(190, 190, 190, 0.15);
   z-index: 3;
-  border-bottom: 0.125rem solid #ffd400;
+  background: #010101;
 }
 .--navigationbar-two .logo {
   display: flex;
@@ -230,15 +231,25 @@ i:hover {
 }
 .--navigationbar-two .navlink__container .nav_link {
   transition: border 0.01ms ease-out;
-  font-weight: 700;
-  padding-bottom: 0.5rem;
+  font-weight: 400;
+  padding: 0.5rem;
   cursor: pointer;
+  color: white;
 }
 .--navigationbar-two .navlink__container .nav_link--active {
-  border-bottom: 0.1875rem solid #ffd400;
+  padding: 0.5rem;
+  border-bottom: 0.125rem solid #ffd400;
 }
 .--navigationbar-two .navlink__container a:hover {
-  border-bottom: 0.1875rem solid #ffd400;
+  border-bottom: 0.125rem solid #ffd400;
+}
+
+.blackbackground {
+  background: #010101;
+}
+
+.whitebackground {
+  background: white !important;
 }
 
 .footer-two {
@@ -992,10 +1003,6 @@ section:nth-child(4) .content {
 .singleArtiste--banner .single-banner .artiste-music-details .music-links a:hover {
   transform: translateY(-0.18rem);
   transition: all 0.3s ease 0s;
-}
-
-.musicalSlider {
-  border: 2px solid red;
 }
 
 /*# sourceMappingURL=main.css.map */

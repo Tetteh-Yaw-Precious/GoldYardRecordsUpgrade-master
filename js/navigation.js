@@ -102,3 +102,23 @@ window.addEventListener("scroll", () => {
     homeJs.classList.add("nav_link--active");
   }
 });
+
+//changing navstyle on scrollhit
+const secondnavbar = document.getElementById("secondnavbar--js");
+window.addEventListener("scroll", (e) => {
+  scrollY >= 600
+    ? secondnavbar.classList.add("whitebackground")
+    : secondnavbar.classList.remove("whitebackground");
+
+  if (scrollY >= 600) {
+    secondnavbar.classList.add("whitebackground");
+    navlinks.forEach(navlink=>{
+      navlink.style.color = "#010101";
+    })
+  } else {
+    secondnavbar.classList.remove("whitebackground");
+    navlinks.forEach(navlink=>{
+      navlink.style.color = "white";
+    })
+  }
+});
