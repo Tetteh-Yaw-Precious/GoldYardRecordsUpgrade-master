@@ -80,15 +80,16 @@ const removeHover = () => {
 //checking for scrollbar location
 window.addEventListener("scroll", () => {
   let scroll = this.scrollY;
-  if (scroll >= 2800) {
+  console.log(scroll);
+  if (scroll >= 2400) {
     removeHover();
     const contactJs = document.querySelector(".contactUs-js");
     contactJs.classList.add("nav_link--active");
-  } else if (scroll >= 2400) {
+  } else if (scroll >= 1955) {
     removeHover();
     const producersJs = document.querySelector(".producers-js");
     producersJs.classList.add("nav_link--active");
-  } else if (scroll >= 1360) {
+  } else if (scroll >= 855) {
     removeHover();
     const ourServicesJs = document.querySelector(".ourServices-js");
     ourServicesJs.classList.add("nav_link--active");
