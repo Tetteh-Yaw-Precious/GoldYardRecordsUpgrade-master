@@ -2,17 +2,17 @@
 const navlink_container = document.getElementById("navlink__container");
 console.log(navlink_container.children);
 const navlinks = Array.from(navlink_container.children);
-navlink_container.addEventListener("mouseover", (e) => {
-  if (e.target !== navlink_container) {
-    e.target.classList.add("nav_link--active");
-  }
-});
+// navlink_container.addEventListener("mouseover", (e) => {
+//   if (e.target !== navlink_container) {
+//     e.target.classList.add("nav_link--active");
+//   }
+// });
 
-navlink_container.addEventListener("mouseout", (e) => {
-  if (e.target !== navlink_container) {
-    e.target.classList.remove("nav_link--active");
-  }
-});
+// navlink_container.addEventListener("mouseout", (e) => {
+//   if (e.target !== navlink_container) {
+//     e.target.classList.remove("nav_link--active");
+//   }
+// });
 //navigation navigationbar links on click
 // const navlink__switcher = function (e, navlink) {
 //   navlink.classList.add("nav_link--active");
