@@ -36,9 +36,11 @@
     .nav_link--active {
       padding: 0.5rem;
       border-bottom: rem(2) solid $primaryColor;
+      font-weight: 700;
     }
     a:hover {
       border-bottom: rem(2) solid $primaryColor;
+      font-weight: none;
     }
   }
 }

@@ -17,7 +17,7 @@ $breakpoint argument choices:
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #333;
   font-size: 95%;
 }
@@ -27,7 +27,7 @@ $breakpoint argument choices:
 }
 * h1 {
   font-size: 1.75rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
 }
@@ -38,7 +38,7 @@ $breakpoint argument choices:
   letter-spacing: -0.04em;
 }
 * h3 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 1rem;
@@ -49,10 +49,10 @@ $breakpoint argument choices:
   width: 20%;
 }
 * p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 1rem;
+  font-weight: light;
+  font-size: 0.93rem;
   line-height: 1.65;
   color: #4f4f4f;
   letter-spacing: 0.02em;
@@ -210,7 +210,7 @@ i:hover {
   justify-content: space-between;
   position: sticky;
   top: 0;
-  box-shadow: 0rem 0.25rem 3.75rem rgba(190, 190, 190, 0.15);
+  box-shadow: 0rem 0.25rem 3.75rem rgba(70, 70, 70, 0.15);
   z-index: 3;
   background: #010101;
 }
@@ -239,9 +239,11 @@ i:hover {
 .--navigationbar-two .navlink__container .nav_link--active {
   padding: 0.5rem;
   border-bottom: 0.125rem solid #ffd400;
+  font-weight: 700;
 }
 .--navigationbar-two .navlink__container a:hover {
   border-bottom: 0.125rem solid #ffd400;
+  font-weight: none;
 }
 
 .blackbackground {

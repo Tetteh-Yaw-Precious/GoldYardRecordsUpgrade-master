@@ -1,5 +1,5 @@
-@use '../abstracts/variables.scss' as *;
-@use '../base/typography.scss' as *;
+@use "../abstracts/variables.scss" as *;
+@use "../base/typography.scss" as *;
 
 * {
   margin: 0;
@@ -11,7 +11,7 @@
   font-size: 95%;
   body {
     box-sizing: border-box;
-    background: rgb(202, 202, 202);
+    background: rgb(255, 255, 255);
   }
   h1 {
     font-size: 1.75rem;
@@ -42,8 +42,8 @@
   p {
     font-family: $primaryFont;
     font-style: normal;
-    font-weight: normal;
-    font-size: 1rem;
+    font-weight: light;
+    font-size: 0.93rem;
     line-height: 1.65;
     color: $primaryFontColor;
     letter-spacing: 0.02em;

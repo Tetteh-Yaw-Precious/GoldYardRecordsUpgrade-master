@@ -110,15 +110,15 @@ window.addEventListener("scroll", (e) => {
     ? secondnavbar.classList.add("whitebackground")
     : secondnavbar.classList.remove("whitebackground");
 
-  if (scrollY >= 600) {
+  if (scrollY >= 200) {
     secondnavbar.classList.add("whitebackground");
-    navlinks.forEach(navlink=>{
+    navlinks.forEach((navlink) => {
       navlink.style.color = "#010101";
-    })
+    });
   } else {
     secondnavbar.classList.remove("whitebackground");
-    navlinks.forEach(navlink=>{
+    navlinks.forEach((navlink) => {
       navlink.style.color = "white";
-    })
+    });
   }
 });
