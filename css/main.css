@@ -569,7 +569,7 @@ section:nth-child(4) .content {
   display: grid;
   grid-template-columns: 17rem 17rem 17rem;
   grid-template-rows: 10rem 10rem;
-  grid-gap: 2rem;
+  grid-row-gap: 2rem;
   backface-visibility: hidden;
 }
 .-services-grid .grid-item {

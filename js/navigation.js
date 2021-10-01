@@ -1,6 +1,5 @@
 //switching active class on navigation bar
 const navlink_container = document.getElementById("navlink__container");
-console.log(navlink_container.children);
 const navlinks = Array.from(navlink_container.children);
 // navlink_container.addEventListener("mouseover", (e) => {
 //   if (e.target !== navlink_container) {
@@ -80,7 +79,6 @@ const removeHover = () => {
 //checking for scrollbar location
 window.addEventListener("scroll", () => {
   let scroll = this.scrollY;
-  console.log(scroll);
   if (scroll >= 2400) {
     removeHover();
     const contactJs = document.querySelector(".contactUs-js");
@@ -107,10 +105,7 @@ window.addEventListener("scroll", () => {
 //changing navstyle on scrollhit
 const secondnavbar = document.getElementById("secondnavbar--js");
 window.addEventListener("scroll", (e) => {
-  scrollY >= 600
-    ? secondnavbar.classList.add("whitebackground")
-    : secondnavbar.classList.remove("whitebackground");
-
+  e.preventDefault();
   if (scrollY >= 200) {
     secondnavbar.classList.add("whitebackground");
     navlinks.forEach((navlink) => {
