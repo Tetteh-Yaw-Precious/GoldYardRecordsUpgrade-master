@@ -21,6 +21,26 @@ $breakpoint argument choices:
   color: #333;
   font-size: 95%;
 }
+@media (max-width: 37.5em) {
+  * {
+    font-size: 97% !important;
+  }
+}
+@media (max-width: 75em) {
+  * {
+    font-size: 97%;
+  }
+}
+@media (max-width: 56.25em) {
+  * {
+    font-size: 96%;
+  }
+}
+@media (min-wdith: 112.5em) {
+  * {
+    font-size: 100%;
+  }
+}
 * body {
   box-sizing: border-box;
   background: white;
@@ -424,6 +444,11 @@ i:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (max-width: 37.5em) {
+  .banner {
+    background-position: left;
+  }
+}
 .banner .container {
   margin: 0 0 0 34rem;
   width: 100vh;
@@ -433,10 +458,23 @@ i:hover {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 37.5em) {
+  .banner .container {
+    background-position: left;
+    margin: 0 0 0 0;
+    width: 100%;
+  }
+}
 .banner .container p:nth-child(1) {
   font-size: 1.75rem;
   padding-bottom: 0.625rem;
   color: #959595;
+}
+@media (max-width: 37.5em) {
+  .banner .container p:nth-child(1) {
+    font-size: 1.375rem !important;
+    padding-bottom: 0.125rem !important;
+  }
 }
 .banner .container h2 {
   color: white;
@@ -444,6 +482,11 @@ i:hover {
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 3%;
   padding-bottom: 0.3125rem;
+}
+@media (max-width: 37.5em) {
+  .banner .container h2 {
+    font-size: 1.6875rem !important;
+  }
 }
 .banner .container h2 span {
   font-family: "Alfa Slab One", cursive;
@@ -478,17 +521,41 @@ i:hover {
   padding: 7rem 0rem;
   behavior: smooth;
 }
+@media (max-width: 37.5em) {
+  .aboutUs {
+    margin-top: 1.25rem;
+    min-height: 6.25rem;
+  }
+}
 .aboutUs .container {
   width: 80%;
   margin: 0 10%;
-  height: 31.25rem;
+  min-height: 31.25rem;
   display: flex;
+}
+@media (max-width: 37.5em) {
+  .aboutUs .container {
+    width: 100%;
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
 }
 .aboutUs .container .content {
   width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media (max-width: 37.5em) {
+  .aboutUs .container .content {
+    width: 85;
+  }
+}
+@media (max-width: 37.5em) {
+  .aboutUs .container .content h3 {
+    padding: 1.5rem 0 0 0;
+    width: 60%;
+  }
 }
 .aboutUs .container .content .aboutUs--text {
   padding: 0.5rem 0rem;
@@ -500,6 +567,11 @@ i:hover {
   width: 40%;
   display: flex;
 }
+@media (max-width: 37.5em) {
+  .aboutUs .container .images {
+    width: 90%;
+  }
+}
 .aboutUs .container .images img:nth-child(1) {
   width: 16.1875rem;
   position: relative;
@@ -507,10 +579,20 @@ i:hover {
   z-index: 1;
   border-radius: 3.125rem;
 }
+@media (max-width: 37.5em) {
+  .aboutUs .container .images img:nth-child(1) {
+    left: 0;
+  }
+}
 .aboutUs .container img:nth-child(2) {
   width: 12.5rem;
   border-radius: 3.125rem;
   margin: 6rem 0 6rem 0;
+}
+@media (max-width: 37.5em) {
+  .aboutUs .container img:nth-child(2) {
+    display: none;
+  }
 }
 
 .ourServices {
@@ -518,11 +600,17 @@ i:hover {
   height: 31.25rem;
   margin-top: 6.25rem;
 }
+@media (max-width: 37.5em) {
+  .ourServices {
+    display: flex;
+  }
+}
 .ourServices .container {
   width: 80%;
   margin: 0 10%;
   height: 31.25rem;
   display: flex;
+  border: 1px solid blue;
 }
 .ourServices .container .content {
   width: 80%;
@@ -552,28 +640,65 @@ i:hover {
 
 section:nth-child(4) {
   width: 100%;
-  height: 43.75rem;
+  min-height: 43.75rem;
   margin-top: 7.5rem;
   display: grid;
   place-content: center;
+}
+@media (max-width: 37.5em) {
+  section:nth-child(4) {
+    margin-top: 0;
+    min-height: 75rem;
+    place-content: initial;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 section:nth-child(4) .content {
   width: 100%;
   margin-bottom: 5%;
   margin-left: 2%;
 }
+@media (max-width: 37.5em) {
+  section:nth-child(4) .content {
+    width: 80%;
+  }
+}
+@media (max-width: 37.5em) {
+  section:nth-child(4) .content h3 {
+    padding: 1.5rem 0 0 0;
+    width: 60%;
+  }
+}
 
 .-services-grid {
   width: 55.1875rem;
-  height: 28.125rem;
+  min-height: 28.125rem;
   display: grid;
   grid-template-columns: 17rem 17rem 17rem;
   grid-template-rows: 10rem 10rem;
   grid-row-gap: 2rem;
   backface-visibility: hidden;
 }
+@media (max-width: 37.5em) {
+  .-services-grid {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    min-height: 43.75rem !important;
+  }
+}
 .-services-grid .grid-item {
   display: flex;
+}
+@media (max-width: 37.5em) {
+  .-services-grid .grid-item {
+    flex-direction: column;
+    border: 1px solid #f5f4f4;
+  }
 }
 .-services-grid .grid-item .--item-content {
   width: 90%;
@@ -633,6 +758,12 @@ section:nth-child(4) .content {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 37.5em) {
+  .-services-grid .grid-item .--item-hr {
+    width: 100;
+    display: none;
+  }
 }
 .-services-grid .grid-item .--item-hr hr {
   width: 0.1rem;
