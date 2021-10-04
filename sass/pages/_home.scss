@@ -157,7 +157,6 @@
     margin: 0 10%;
     height: rem(500);
     display: flex;
-    border: 1px solid blue;
     .content {
       width: 80%;
       display: flex;
@@ -331,6 +330,8 @@ section:nth-child(4) {
 .ourProducers {
   min-height: 20vh;
   margin-bottom: 5rem;
+  @include respond(phone) {
+  }
   h1 {
     margin-left: 25%;
   }
@@ -338,8 +339,13 @@ section:nth-child(4) {
     min-height: 36rem;
     display: flex;
     justify-content: center;
-
     align-items: center;
+    @include respond(phone) {
+      width: 100%;
+      min-height: 40rem;
+      justify-content: center;
+      flex-direction: column;
+    }
     .one {
       width: 25%;
       height: 35rem;
@@ -350,8 +356,13 @@ section:nth-child(4) {
       background-position: center;
       display: flex;
       align-items: flex-end;
+      @include respond(phone) {
+        height: 20rem;
+        width: 80%;
+        margin-bottom: 2rem;
+      }
       .details {
-        height: 10vh;
+        height: 15vh;
         width: 100%;
         background: rgba(255, 255, 255, 0.6);
         backdrop-filter: blur(rem(100));
@@ -367,8 +378,12 @@ section:nth-child(4) {
       background-position: center;
       display: flex;
       align-items: flex-end;
+      @include respond(phone) {
+        width: 80%;
+        height: 20rem;
+      }
       .details {
-        height: 10vh;
+        height: 15vh;
         width: 100%;
         background: rgba(255, 255, 255, 0.6);
         backdrop-filter: blur(rem(100));

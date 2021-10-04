@@ -18,5 +18,8 @@
   "homepage": "https://github.com/Tetteh-Yaw-Precious/GoldYardRecordsUpgrade-master#readme",
   "devDependencies": {
     "dart-sass": "^1.25.0"
+  },
+  "dependencies": {
+    "sass": "^1.42.1"
   }
 }
