@@ -115,6 +115,40 @@ circle {
   display: none !important;
 }
 
+@keyframes slidefrombottom {
+  0% {
+    transform: translateY(0.9375rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes slidein {
+  from {
+    transform: translateX(-37.5rem);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+@keyframes slideout {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translateX(-37.5rem);
+  }
+}
 .releaseSlider {
   min-height: 20vh;
   display: flex;
