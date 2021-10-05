@@ -1,5 +1,6 @@
 @use "../abstracts/variables.scss" as *;
 @use "../abstracts/functions.scss" as *;
+@use "../abstracts/mixins.scss" as *;
 .--navigationbar-two {
   width: 100%;
   padding: 0 10%;
@@ -12,10 +13,14 @@
   box-shadow: (0rem 0.25rem 3.75rem rgba(70, 70, 70, 0.15));
   z-index: 3;
   background: #010101;
+
   .logo {
     display: flex;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
+    // @include respond(phone) {
+    //   border: 1px solid red;
+    // }
     img {
       width: 80%;
     }
@@ -26,12 +31,32 @@
     height: 100%;
     justify-content: space-around;
     align-items: center;
+    @include respond(phone) {
+      position: absolute;
+      top: 0;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: space-evenly;
+      width: 100%;
+      background: black;
+      z-index: 20;
+    }
+    .closeicon {
+      width: 2rem;
+      display: none;
+      @include respond(phone) {
+        display: flex;
+      }
+    }
     .nav_link {
       transition: border 0.01ms ease-out;
       font-weight: 400;
       padding: 0.5rem;
       cursor: pointer;
       color: white;
+      @include respond(phone) {
+        padding: 0;
+      }
     }
     .nav_link--active {
       padding: 0.5rem;

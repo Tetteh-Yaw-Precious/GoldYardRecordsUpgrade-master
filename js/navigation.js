@@ -1,6 +1,8 @@
 //switching active class on navigation bar
 const navlink_container = document.getElementById("navlink__container");
 const navlinks = Array.from(navlink_container.children);
+const closeicon = document.querySelector(".closeicon");
+console.log(closeicon);
 
 //removing hover
 const removeHover = () => {
@@ -86,5 +88,8 @@ navlinks.forEach((link) => {
     }
   });
 });
-
+closeicon.addEventListener("click", (e) => {
+  console.log("fired");
+  navlink_container.classList.add("display--active");
+});
 eventScrollfunction();

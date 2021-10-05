@@ -111,6 +111,10 @@ circle {
   fill: black;
 }
 
+.display--active {
+  display: none !important;
+}
+
 .releaseSlider {
   min-height: 20vh;
   display: flex;
@@ -237,7 +241,6 @@ i:hover {
 .--navigationbar-two .logo {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .--navigationbar-two .logo img {
   width: 80%;
@@ -249,12 +252,38 @@ i:hover {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 37.5em) {
+  .--navigationbar-two .navlink__container {
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+    width: 100%;
+    background: black;
+    z-index: 20;
+  }
+}
+.--navigationbar-two .navlink__container .closeicon {
+  width: 2rem;
+  display: none;
+}
+@media (max-width: 37.5em) {
+  .--navigationbar-two .navlink__container .closeicon {
+    display: flex;
+  }
+}
 .--navigationbar-two .navlink__container .nav_link {
   transition: border 0.01ms ease-out;
   font-weight: 400;
   padding: 0.5rem;
   cursor: pointer;
   color: white;
+}
+@media (max-width: 37.5em) {
+  .--navigationbar-two .navlink__container .nav_link {
+    padding: 0;
+  }
 }
 .--navigationbar-two .navlink__container .nav_link--active {
   padding: 0.5rem;
