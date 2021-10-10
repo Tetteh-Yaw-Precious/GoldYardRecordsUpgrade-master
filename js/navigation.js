@@ -2,7 +2,8 @@
 const navlink_container = document.getElementById("navlink__container");
 const navlinks = Array.from(navlink_container.children);
 const closeicon = document.querySelector(".closeicon");
-console.log(closeicon);
+const openicon = document.getElementById("openicon--js");
+console.log(openicon);
 
 //removing hover
 const removeHover = () => {
@@ -15,7 +16,6 @@ const eventScrollfunction = () => {
   //checking for scrollbar location
   window.addEventListener("scroll", () => {
     let scroll = this.scrollY;
-    console.log(scroll);
     if (scroll >= 2400) {
       removeHover();
       const contactJs = document.querySelector(".contactUs-js");
@@ -88,8 +88,11 @@ navlinks.forEach((link) => {
     }
   });
 });
+//navbar slidein
+openicon.addEventListener("click", (e) => {
+  navlink_container.style.animation = "slidein  0.5s  forwards";
+});
 closeicon.addEventListener("click", (e) => {
-  console.log("fired");
-  navlink_container.classList.add("display--active");
+  navlink_container.style.animation = "slideout 0.5s forwards";
 });
 eventScrollfunction();

@@ -135,7 +135,7 @@ circle {
 }
 @keyframes slidein {
   from {
-    transform: translateX(-37.5rem);
+    transform: translateX(25rem);
   }
   to {
     transform: translate(0);
@@ -146,7 +146,7 @@ circle {
     transform: translate(0);
   }
   to {
-    transform: translateX(-37.5rem);
+    transform: translateX(25rem);
   }
 }
 .releaseSlider {
@@ -296,6 +296,7 @@ i:hover {
     width: 100%;
     background: black;
     z-index: 20;
+    transform: translateX(25rem);
   }
 }
 .--navigationbar-two .navlink__container .closeicon {
@@ -335,6 +336,18 @@ i:hover {
 
 .whitebackground {
   background: white !important;
+}
+
+.openicon {
+  display: none;
+}
+@media (max-width: 37.5em) {
+  .openicon {
+    display: block;
+    position: relative;
+    width: 1rem;
+    left: 11.1875rem;
+  }
 }
 
 .footer-two {

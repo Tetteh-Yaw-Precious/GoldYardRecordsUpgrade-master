@@ -40,7 +40,9 @@
       width: 100%;
       background: black;
       z-index: 20;
+      transform: translateX(25rem);
     }
+
     .closeicon {
       width: 2rem;
       display: none;
@@ -75,4 +77,13 @@
 }
 .whitebackground {
   background: white !important;
+}
+.openicon {
+  display: none;
+  @include respond(phone) {
+    display: block;
+    position: relative;
+    width: 1rem;
+    left: rem(179);
+  }
 }
