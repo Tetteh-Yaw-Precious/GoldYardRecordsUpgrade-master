@@ -11,6 +11,7 @@
   background-size: cover;
   @include respond(phone) {
     background-position: left;
+    background: black;
   }
   .container {
     margin: 0 0 0 34rem;

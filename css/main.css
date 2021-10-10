@@ -621,6 +621,7 @@ i:hover {
 @media (max-width: 37.5em) {
   .banner {
     background-position: left;
+    background: black;
   }
 }
 .banner .container {

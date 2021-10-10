@@ -3,6 +3,7 @@ const navlink_container = document.getElementById("navlink__container");
 const navlinks = Array.from(navlink_container.children);
 const closeicon = document.querySelector(".closeicon");
 const openicon = document.getElementById("openicon--js");
+const mediaQuery = window.matchMedia("(min-width: 600px)");
 console.log(openicon);
 
 //removing hover
@@ -44,7 +45,7 @@ const eventScrollfunction = () => {
 const secondnavbar = document.getElementById("secondnavbar--js");
 window.addEventListener("scroll", (e) => {
   e.preventDefault();
-  if (scrollY >= 200) {
+  if (scrollY >= 200 && window.innerWidth > 600) {
     secondnavbar.classList.add("whitebackground");
     navlinks.forEach((navlink) => {
       navlink.style.color = "#010101";
@@ -65,11 +66,18 @@ navlinks.forEach((link) => {
         top: 0,
         behavior: "smooth",
       });
+      // window.innerWidth <= 600
+      //   ? (navlink_container.style.animation = "slideout 0.5s forwards")
+      //   : "fired";
     } else if (e.target.classList.contains("aboutUs-js")) {
       scrollTo({
         top: 600,
         behavior: "smooth",
       });
+      console.log("about");
+      window.innerWidth <= 600
+        ? (navlink_container.style.animation = "slideout 0.5s forwards")
+        : "fired";
     } else if (e.target.classList.contains("ourServices-js")) {
       scrollTo({
         top: 1383,
