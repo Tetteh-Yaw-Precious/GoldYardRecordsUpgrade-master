@@ -8,11 +8,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: sticky;
+  position: fixed;
   top: 0;
   box-shadow: (0rem 0.25rem 3.75rem rgba(70, 70, 70, 0.15));
   z-index: 3;
   background: #010101;
+  @include respond(phone) {
+    position: sticky !important;
+    top: 0;
+  }
 
   .logo {
     display: flex;

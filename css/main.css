@@ -266,11 +266,17 @@ i:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: sticky;
+  position: fixed;
   top: 0;
   box-shadow: 0rem 0.25rem 3.75rem rgba(70, 70, 70, 0.15);
   z-index: 3;
   background: #010101;
+}
+@media (max-width: 37.5em) {
+  .--navigationbar-two {
+    position: sticky !important;
+    top: 0;
+  }
 }
 .--navigationbar-two .logo {
   display: flex;

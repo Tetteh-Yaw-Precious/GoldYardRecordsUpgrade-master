@@ -17,6 +17,7 @@ const eventScrollfunction = () => {
   //checking for scrollbar location
   window.addEventListener("scroll", () => {
     let scroll = this.scrollY;
+    console.log(scroll);
     if (scroll >= 2400) {
       removeHover();
       const contactJs = document.querySelector(".contactUs-js");
