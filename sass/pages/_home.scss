@@ -91,7 +91,6 @@
     min-height: rem(500);
     display: flex;
     @include respond(phone) {
-      width: 100%;
       flex-direction: column;
       flex-direction: column-reverse;
     }

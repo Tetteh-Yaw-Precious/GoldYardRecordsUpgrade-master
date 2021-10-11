@@ -28,6 +28,9 @@
     img {
       width: 80%;
     }
+    @include respond(phone) {
+      width: 27% !important;
+    }
   }
   .navlink__container {
     display: flex;
@@ -89,6 +92,6 @@
     display: block;
     position: relative;
     width: 1rem;
-    left: rem(179);
+    left: rem(200);
   }
 }
