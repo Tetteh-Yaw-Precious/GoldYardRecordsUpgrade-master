@@ -722,8 +722,10 @@ i:hover {
 }
 @media (max-width: 37.5em) {
   .aboutUs .container {
+    width: 90%;
     flex-direction: column;
     flex-direction: column-reverse;
+    padding: 0 0 0 10%;
   }
 }
 .aboutUs .container .content {
@@ -755,7 +757,8 @@ i:hover {
 }
 @media (max-width: 37.5em) {
   .aboutUs .container .images {
-    width: 90%;
+    width: 100%;
+    justify-content: cen;
   }
 }
 .aboutUs .container .images img:nth-child(1) {
