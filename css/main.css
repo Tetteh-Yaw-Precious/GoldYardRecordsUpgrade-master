@@ -294,6 +294,7 @@ i:hover {
 }
 @media (max-width: 37.5em) {
   .--navigationbar-two .navlink__container {
+    display: none;
     position: absolute;
     top: 0;
     flex-direction: column;

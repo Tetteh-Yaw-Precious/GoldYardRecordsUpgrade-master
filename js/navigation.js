@@ -100,8 +100,10 @@ navlinks.forEach((link) => {
 //navbar slidein
 openicon.addEventListener("click", (e) => {
   navlink_container.style.animation = "slidein  0.5s  forwards";
+  navlink_container.style.display = "flex";
 });
 closeicon.addEventListener("click", (e) => {
   navlink_container.style.animation = "slideout 0.5s forwards";
+  navlink_container.style.display = "none";
 });
 eventScrollfunction();
