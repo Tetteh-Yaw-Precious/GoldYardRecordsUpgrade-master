@@ -14,7 +14,7 @@
   z-index: 3;
   background: #010101;
   @include respond(phone) {
-    position: sticky !important;
+    position: absolute !important;
     top: 0;
   }
 
