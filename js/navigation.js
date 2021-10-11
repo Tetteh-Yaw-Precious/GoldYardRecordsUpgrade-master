@@ -103,7 +103,11 @@ openicon.addEventListener("click", (e) => {
   navlink_container.style.animation = "slidein  0.5s  forwards";
 });
 closeicon.addEventListener("click", (e) => {
-  navlink_container.style.display = "none";
-  navlink_container.style.animation = "slideout 0.5s forwards";
+  setTimeout(() => {
+    navlink_container.style.animation = "slideout 0.5s forwards";
+  }, 100);
+  setTimeout(() => {
+    navlink_container.style.display = "none";
+  }, 500);
 });
 eventScrollfunction();
