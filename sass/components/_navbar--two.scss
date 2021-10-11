@@ -13,6 +13,9 @@
   box-shadow: (0rem 0.25rem 3.75rem rgba(70, 70, 70, 0.15));
   z-index: 3;
   background: #010101;
+  // @include respond(regular_L) {
+  //   border: 2px solid green;
+  // }
   @include respond(phone) {
     position: sticky !important;
     top: 0;
@@ -38,6 +41,16 @@
     height: 100%;
     justify-content: space-around;
     align-items: center;
+
+    @include respond(regular_L) {
+      width: 62%;
+    }
+    @include respond(tab-port) {
+      width: 62%;
+    }
+    @include respond(regTab) {
+      width: 70%;
+    }
     @include respond(phone) {
       display: none;
       position: absolute;

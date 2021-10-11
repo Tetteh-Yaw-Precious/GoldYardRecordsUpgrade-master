@@ -18,6 +18,9 @@
     width: 55%;
     min-height: 5rem;
     display: flex;
+    @include respond(tab-port) {
+      width: 50rem;
+    }
     @include respond(phone) {
       flex-direction: column;
       min-height: 10rem;
@@ -41,6 +44,9 @@
         }
         img {
           width: 65%;
+          @include respond(tab-port) {
+            width: 54%;
+          }
           @include respond(phone) {
             width: 90%;
           }
@@ -84,6 +90,9 @@
             font-weight: 900;
             margin: 0;
             color: black;
+            @include respond(tab-port) {
+              font-size: 0.8rem;
+            }
             @include respond(phone) {
               border-bottom: none;
             }

@@ -4,7 +4,6 @@ const navlinks = Array.from(navlink_container.children);
 const closeicon = document.querySelector(".closeicon");
 const openicon = document.getElementById("openicon--js");
 const mediaQuery = window.matchMedia("(min-width: 600px)");
-console.log(openicon);
 
 //removing hover
 const removeHover = () => {
@@ -17,7 +16,6 @@ const eventScrollfunction = () => {
   //checking for scrollbar location
   window.addEventListener("scroll", () => {
     let scroll = this.scrollY;
-    console.log(scroll);
     if (scroll >= 2400) {
       removeHover();
       const contactJs = document.querySelector(".contactUs-js");
@@ -75,7 +73,7 @@ navlinks.forEach((link) => {
         top: 600,
         behavior: "smooth",
       });
-      console.log("about");
+
       window.innerWidth <= 600
         ? (navlink_container.style.animation = "slideout 0.5s forwards")
         : "fired";

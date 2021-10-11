@@ -35,6 +35,16 @@ $breakpoint argument choices:
       @content;
     } //6oopx
   }
+  @if $breakpoint == regular_L {
+    @media (max-width: 64em) {
+      @content;
+    }
+  }
+  @if $breakpoint == regTab {
+    @media (max-width: 48em) {
+      @content;
+    }
+  }
   @if $breakpoint == tab-port {
     @media (max-width: 56.25em) {
       @content;

@@ -14,13 +14,19 @@
     background: black;
   }
   .container {
-    margin: 0 0 0 34rem;
+    margin: 2rem 0 0 34rem;
     width: 100vh;
     height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @include respond(regular_L) {
+      margin: 2rem 0 0 10rem;
+    }
+    @include respond(tab-port) {
+      margin: 3rem 0 0 6rem;
+    }
     @include respond(phone) {
       background-position: left;
       margin: 0 0 0 0;
@@ -125,7 +131,6 @@
       display: flex;
       @include respond(phone) {
         width: 100%;
-        justify-content: cen;
       }
       img:nth-child(1) {
         width: rem(259);
@@ -142,6 +147,17 @@
       width: rem(200);
       border-radius: rem(50);
       margin: 6rem 0 6rem 0;
+      @include respond(regular_L) {
+        position: relative;
+        right: 5rem;
+      }
+      @include respond(tab-port) {
+        position: relative;
+        right: 5rem;
+      }
+      @include respond(regTab) {
+        display: none;
+      }
       @include respond(phone) {
         display: none;
       }
@@ -185,6 +201,8 @@
       width: rem(200);
       border-radius: rem(50);
       margin: 6rem 0 6rem 0;
+      @include respond(tab-port) {
+      }
     }
   }
 }
@@ -208,6 +226,10 @@ section:nth-child(4) {
     width: 100%;
     margin-bottom: 5%;
     margin-left: 2%;
+    @include respond(tab-port) {
+      margin-left: 10%;
+      width: 90%;
+    }
     @include respond(phone) {
       width: 80%;
     }
@@ -227,6 +249,20 @@ section:nth-child(4) {
   grid-template-rows: 10rem 10rem;
   grid-row-gap: 2rem;
   backface-visibility: hidden;
+
+  @include respond(tab-port) {
+    width: 51.1875rem;
+    margin: 0 0 0 4rem;
+  }
+  @include respond(regTab) {
+    min-height: 50.125rem;
+    grid-column-gap: 2rem;
+    width: 95%;
+    padding: 0 0 0 2rem;
+    margin: 0 0 0 0;
+    grid-template-columns: 17rem 17rem;
+    grid-template-rows: 10rem 10rem 10rem;
+  }
   @include respond(phone) {
     width: 80%;
     display: flex;
@@ -235,6 +271,9 @@ section:nth-child(4) {
   }
   .grid-item {
     display: flex;
+    @include respond(regTab) {
+      border: 2px solid $inputColor;
+    }
     @include respond(phone) {
       flex-direction: column;
       border: 1px solid $inputColor;
@@ -298,6 +337,9 @@ section:nth-child(4) {
       display: flex;
       justify-content: center;
       align-items: center;
+      @include respond(regTab) {
+        display: none;
+      }
       @include respond(phone) {
         width: 100;
         display: none;
@@ -333,16 +375,23 @@ section:nth-child(4) {
 .ourProducers {
   min-height: 20vh;
   margin-bottom: 5rem;
+
   @include respond(phone) {
   }
   h1 {
     margin-left: 25%;
+    @include respond(tab-port) {
+      margin-left: 15%;
+    }
   }
   .producers {
     min-height: 36rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    @include respond(tab-port) {
+      min-height: 22rem;
+    }
     @include respond(phone) {
       width: 100%;
       min-height: 40rem;
@@ -359,6 +408,10 @@ section:nth-child(4) {
       background-position: center;
       display: flex;
       align-items: flex-end;
+      @include respond(tab-port) {
+        width: 35%;
+        height: 23rem;
+      }
       @include respond(phone) {
         height: 20rem;
         width: 80%;
@@ -381,6 +434,10 @@ section:nth-child(4) {
       background-position: center;
       display: flex;
       align-items: flex-end;
+      @include respond(tab-port) {
+        width: 35%;
+        height: 23rem;
+      }
       @include respond(phone) {
         width: 80%;
         height: 20rem;
