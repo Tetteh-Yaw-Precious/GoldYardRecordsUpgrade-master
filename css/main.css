@@ -274,7 +274,7 @@ i:hover {
 }
 @media (max-width: 37.5em) {
   .--navigationbar-two {
-    position: fixed !important;
+    position: sticky !important;
     top: 0;
   }
 }
