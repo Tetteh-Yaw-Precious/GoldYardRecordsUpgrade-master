@@ -4,7 +4,11 @@
   "description": "Record label site",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "dart-sass sass/main.scss css/main.css --watch"
+    "watch:sass": "dart-sass sass/main.scss css/main.css --watch",
+    "compile:sass": "dart-sass sass/main.scss css/main.comp.css",
+    "prefix:sass": "postcss --use autoprefixer -b 'last 10 versions' css/main.comp.css -o css/main.prefix.css",
+    "compress:css": "sass css/main.prefix.css css/main.css --style compressed",
+    "build:css": "npm-run-all compile:sass prefix:sass compress:css"
   },
   "repository": {
     "type": "git",
@@ -17,9 +21,13 @@
   },
   "homepage": "https://github.com/Tetteh-Yaw-Precious/GoldYardRecordsUpgrade-master#readme",
   "devDependencies": {
-    "dart-sass": "^1.25.0"
+    "autoprefixer": "^10.3.7",
+    "concat": "^1.0.3",
+    "dart-sass": "^1.25.0",
+    "postcss": "^8.3.9"
   },
   "dependencies": {
+    "postcss-cli": "^9.0.1",
     "sass": "^1.42.1"
   }
 }
